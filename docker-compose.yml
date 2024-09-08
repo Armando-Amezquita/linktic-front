@@ -1,0 +1,8 @@
+version: "4.25.1"
+services:
+  chancho:
+    build: .
+    ports: 
+      - "4400:4400"
+volumes:
+  mongo-data:

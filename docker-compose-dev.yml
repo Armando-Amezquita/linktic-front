@@ -1,0 +1,10 @@
+version: "4.25.1"
+services:
+  championstracker:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports: 
+      - "5173:5173"
+    volumes:
+      - .:/ChampionsTracker/ChampionsTracker-Frontend
