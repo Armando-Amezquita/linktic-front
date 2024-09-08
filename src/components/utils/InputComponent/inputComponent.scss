@@ -1,0 +1,14 @@
+.inputComponent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    &__field{
+        padding: 1rem;
+        font-size: 1.3rem;
+        outline: none;
+        border: 1px solid rgb(114, 114, 114);
+        border-radius: 1rem;
+    }
+}
