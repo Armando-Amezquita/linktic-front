@@ -1,0 +1,42 @@
+@import '../../styles/components/_mixins.scss';
+
+.navbar {
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    .website-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    h1 {
+        color: #171923;
+        margin: 0;
+    }
+
+    &-menu {
+        display: none;
+    }
+
+    a{
+        font-weight: normal;
+        color: #171923;
+    }
+
+    @include desktop {
+        background: transparent;
+        padding: 1rem 0;
+
+        &-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-btnLogin {
+            display: none;
+        }
+    }
+}

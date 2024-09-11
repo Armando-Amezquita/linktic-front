@@ -1,0 +1,150 @@
+.hotelDetail{
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+    background: #CEEFF2;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr;
+    padding: 1rem;
+    gap: 15px;
+    overflow: hidden;
+
+    &__menu{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 2rem;
+        padding: 4rem 1rem;
+        background: #3F20DA;
+        &--options{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+    &__brand{
+        position: absolute;
+        top: 40px;
+    }
+
+    &__hotel{
+        position: relative;
+        border-radius: 6rem;
+        width: 100%;
+        max-height: 97vh;
+    }
+    &__img{
+        height: 100%;
+        object-fit: fill;
+        border-radius: 6rem;
+        width: 100%;
+    
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 6rem;
+      }
+    
+      &__name {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      &__city,
+      &__qualification {
+        margin: 0.5rem 0;
+      }
+
+      &__overlayProfile{
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        background-color: #CEEFF2;
+        padding: 1.5rem;
+        border-radius: 2rem;
+        display: flex;
+        gap: 10px;
+      }
+
+
+    &__details{
+        &--reservation{
+            display: grid;
+            grid-template-columns: 1fr 15%;
+            min-height: 150px;
+            background: #ffff;
+            gap: 15px;
+            border-radius: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        &--search{
+            padding: 2rem;
+        }
+
+        &--action{
+            height: 100%;
+            border-radius: 4rem;
+            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #3F20DA;
+            color: #fff;
+        }
+    }
+
+    &__roomsTitle{
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: bold;    
+    }
+
+    &__rooms {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-height: 480px;
+        overflow-y: auto;
+
+        &--content{
+            border-radius: 3rem;
+            display: flex;
+            background: #EAFAF8;
+            padding: 5px;
+            height: 120px;
+            gap: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        &--image{
+            height: 100%;
+            width: 150px;
+            object-fit: fill;
+            border-radius: 3rem;
+        }
+    }
+
+}

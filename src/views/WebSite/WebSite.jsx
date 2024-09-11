@@ -1,4 +1,5 @@
 import { Header, Hotels, Contact, Footer } from "../../components";
+import { AboutUs } from "../../components/AboutUs/AboutUs";
 import "./Website.scss"
 
 export const WebSite = () => {
@@ -7,7 +8,7 @@ export const WebSite = () => {
             <div className="website-main">
                 <Header />
                 <Hotels />
-                <Contact />
+                <AboutUs />
                 <Footer />
             </div>
         </div>
