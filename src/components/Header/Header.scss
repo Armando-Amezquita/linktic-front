@@ -1,0 +1,24 @@
+@import '../../styles/components/_mixins.scss';
+@import '../../styles/components/config';
+.header{
+   padding-bottom: 1.5rem;
+   position: relative;
+   p{
+      line-height: 1.5;
+   }
+   &-showmore{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      width: auto;
+      background: transparent;
+   }
+   @include desktop{
+      background: rgb(194, 193, 193);
+      height: 70vh;
+      &-showmore{
+         display: none;
+      }
+   }
+}

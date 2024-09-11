@@ -1,0 +1,68 @@
+@import "./config";
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Resete para REMS - 65.5%=10px de 16px que eran antes. ahora 1rem= 10px, 2rem =20px 2.2rem=22px 
+      ahora los rem son multiplos de 10**/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: $text_font;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title_font;
+  margin: 0;
+  color:$dark-blue;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+h2{
+  font-size: 2.8rem;
+}
+h3{
+  font-size: 2.4rem;
+}
+h4{
+  font-size: 2rem;
+}
+
+
+li{
+  list-style: none;
+}
+p{
+  line-height: 1.2;
+}
+body {
+  font-size: 1.6rem;
+  font-family: $text_font;
+}
+button{
+  border: none;
+  padding: 1.2rem;
+  font-family: $title_font;
+  font-weight: bold;
+}

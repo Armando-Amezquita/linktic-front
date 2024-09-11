@@ -1,0 +1,39 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel__item {
+    text-align: center;
+  }
+  
+  .carousel__item--image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .carousel__button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .carousel__button--prev {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .carousel__button--next {
+    position: absolute;
+    right: 10px;
+  }
+  
